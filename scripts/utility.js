@@ -1,14 +1,19 @@
-function hideElementById(){
-    const navId= document.getElementById('nav');
+function hideElementById() {
+    const navId = document.getElementById('nav');
     navId.classList.add('hidden');
-    const bannerId= document.getElementById('banner');
+    const bannerId = document.getElementById('banner');
     bannerId.classList.add('hidden');
-    const mainId= document.getElementById('main');
+    const mainId = document.getElementById('main');
     mainId.classList.add('hidden');
-    const footerId= document.getElementById('footer');
+    const footerId = document.getElementById('footer');
     footerId.classList.add('hidden');
 }
-function showElementById(){
+function showElementById() {
     const elementId = document.getElementById('modal');
     elementId.classList.remove('hidden');
+}
+
+function addBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-[#1DD100]')
 }
