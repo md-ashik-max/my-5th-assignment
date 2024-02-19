@@ -1,0 +1,4 @@
+function next (){
+    hideElementById();
+    showElementById();
+}

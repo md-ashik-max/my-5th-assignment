@@ -15,7 +15,7 @@
 <body class="font-raleway">
     <header class="m-4 lg:my-16 lg:mx-32">
         <!-- navbar section -->
-        <nav class="mb-8 lg:w-[1170px]">
+        <nav id="nav" class="mb-8 lg:w-[1170px]">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -58,7 +58,7 @@
             </div>
         </nav>
         <!-- banner section -->
-        <section class="relative lg:w-[1170px]">
+        <section id="banner" class="relative lg:w-[1170px]">
             <div class="hero bg-[url('/images/banner.png')] rounded-2xl lg:h-[550px]">
                 <div class="hero-content text-center">
                     <div class="">
@@ -75,7 +75,14 @@
                             <p class="text-white">The integrated testing features allow for a streamlined .</p>
                         </div>
                         <div class="card-actions justify-center items-center">
-                            <button class="btn text-[20px] font-bold bg-[#1DD100] border-[#1DD100]">Buy Tickets</button>
+
+                            <a href="#ticket-section">
+                                <button class="btn text-[20px] font-bold bg-[#1DD100] border-[#1DD100]">
+                                    Buy Tickets
+
+                                </button>
+                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -114,8 +121,20 @@
                 </div>
             </div>
         </section>
+        <!-- modal section -->
+        <section id="modal" class="hidden bg-[#F7F8F8] min-h-screen flex justify-center items-center">
+            <div class="flex flex-col justify-center items-center border-2 rounded-xl p-8">
+                <img src="images/success.png" alt="">
+                <h3 class="text-[#27AE60] text-[24px] font-bold my-4">SUCCESS</h3>
+                <p class="text-[20px] font-medium text-black">Thank you for Booking Our Bus Seats. 
+                    We are working hard to find the best</p>
+                <p class="text-[20px] font-medium text-black">service and deals for you.</p>
+                <p class="mt-2">Shortly you will find a confirmation in your email.</p>
+                <button class="btn mt-4 bg-[#27AE60] text-white font-semibold px-24 rounded-full">Continue</button>    
+            </div>
+        </section>
     </header>
-    <main class="">
+    <main id="main">
         <!-- Offer Section -->
         <section class="mt-8 m-4 lg:my-16 lg:mx-32 lg:mt-24">
             <div class="text-center mb-8 lg:mb-12">
@@ -158,7 +177,8 @@
 
         </section>
         <!-- ticket section -->
-        <section class="my-6 rounded-t-3xl lg:rounded-t-[88px] border-t-2 border-t-[#1DD100] lg:my-20 bg-[#F7F8F8]">
+        <section id="ticket-section"
+            class="my-6 rounded-t-3xl lg:rounded-t-[88px] border-t-2 border-t-[#1DD100] lg:mt-20 bg-[#F7F8F8]">
             <div class="text-center pt-8 lg:pt-20">
                 <h1 class="text-[40px] text-black font-extrabold">Mithila Paribahan</h1>
                 <p class="">
@@ -246,7 +266,7 @@
 
             </div>
             <!-- select seat container -->
-            <div class="m-4 flex lg:w-[1170px] lg:mx-32 bg-[#FFFFFF] rounded-3xl lg:mt-12">
+            <div class="m-4 lg:flex lg:w-[1170px] lg:mx-32 bg-[#FFFFFF] rounded-3xl lg:mt-12 lg:mb-12">
                 <div class="lg:w-[609px] lg:p-8">
                     <h3 class="text-[24px] font-bold pb-4">Select Your Seat</h3>
                     <div class="flex justify-between border-y-2 border-dashed py-2 lg:py-4">
@@ -274,221 +294,221 @@
                                 alt=""></button>
                     </div>
                     <div class="font-inter space-x-4 mt-6">
-                        <span class="pl-[10px] text-[18px] font-medium">
+                        <span class="lg:pl-[10px] text-[18px] font-medium">
                             A
 
                         </span>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             A1
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             A2
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             A3
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             A4
 
                         </button>
                     </div>
                     <div class="font-inter space-x-4 mt-6">
-                        <span class="pl-[10px] text-[18px] font-medium">
+                        <span class="pl-2 lg:pl-[10px] text-[18px] font-medium">
                             B
 
                         </span>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             B1
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             B2
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             B3
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             B4
 
                         </button>
                     </div>
                     <div class="font-inter space-x-4 mt-6">
-                        <span class="pl-2 text-[18px] font-medium">
+                        <span class="lg:pl-2 text-[18px] font-medium">
                             C
 
                         </span>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             C1
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             C2
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             C3
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             C4
 
                         </button>
                     </div>
                     <div class="font-inter space-x-4 mt-6">
-                        <span class="pl-2 text-[18px] font-medium">
+                        <span class="lg:pl-2 text-[18px] font-medium">
                             D
 
                         </span>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             D1
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             D2
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             D3
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             D4
 
                         </button>
                     </div>
                     <div class="font-inter space-x-4 mt-6">
-                        <span class="pl-[10px] text-[18px] font-medium">
+                        <span class="pl-2 lg:pl-[10px] text-[18px] font-medium">
                             E
 
                         </span>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             E1
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             E2
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             E3
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             E4
 
                         </button>
                     </div>
                     <div class="font-inter space-x-4 mt-6">
-                        <span class="pl-[10px] text-[18px] font-medium">
+                        <span class="pl-2 lg:pl-[10px] text-[18px] font-medium">
                             F
 
                         </span>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             F1
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             F2
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             F3
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             F4
 
                         </button>
                     </div>
                     <div class="font-inter space-x-4 mt-6">
-                        <span class="pl-2 text-[18px] font-medium">
+                        <span class="lg:pl-2 text-[18px] font-medium">
                             G
 
                         </span>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             G1
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             G2
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             G3
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             G4
 
                         </button>
                     </div>
                     <div class="font-inter space-x-4 mt-6">
-                        <span class="pl-2 text-[18px] font-medium">
+                        <span class="lg:pl-2 text-[18px] font-medium">
                             H
 
                         </span>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             H1
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             H2
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             H3
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] lg:w-[110px] text-[18px] font-medium">
                             H4
 
                         </button>
                     </div>
                     <div class="font-inter space-x-4 mt-6">
-                        <span class="pl-[14px] text-[18px] font-medium">
+                        <span class="lg:pl-[14px] text-[18px] font-medium">
                             I
 
                         </span>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] w-[60px] lg:w-[110px] text-[18px] font-medium">
                             I1
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] w-[60px] lg:w-[110px] text-[18px] font-medium">
                             I2
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] w-[60px] lg:w-[110px] text-[18px] font-medium">
                             I3
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] w-[60px] lg:w-[110px] text-[18px] font-medium">
                             I4
 
                         </button>
                     </div>
                     <div class="font-inter space-x-4 mt-6">
-                        <span class="pl-[10px] text-[18px] font-medium">
+                        <span class="lg:pl-[10px] text-[18px] font-medium">
                             J
 
                         </span>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] w-[60px] lg:w-[110px] text-[18px] font-medium">
                             J1
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] w-[60px] lg:w-[110px] text-[18px] font-medium">
                             J2
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] w-[60px] lg:w-[110px] text-[18px] font-medium">
                             J3
 
                         </button>
-                        <button class="btn bg-[#0307121A] w-[110px] text-[18px] font-medium">
+                        <button class="btn bg-[#0307121A] w-[60px] lg:w-[110px] text-[18px] font-medium">
                             J4
 
                         </button>
@@ -496,11 +516,11 @@
 
 
                 </div>
-                <div class="lg:w-[500px] lg:pt-8 lg:pl-12 border-l-2 border-dashed">
+                <div class="lg:w-[500px] lg:pt-8 lg:pl-12 lg:border-l-2 border-dashed">
                     <div class="border-b-2 border-dashed pb-4">
                         <h3 class="text-[24px] font-bold">Select Your Seat</h3>
                     </div>
-                    <div class="bg-[#F7F8F8] rounded-xl mt-4">
+                    <div class="bg-[#F7F8F8] rounded-xl mt-4 p-8">
                         <div class="flex justify-between border-b-2 border-dashed pb-4">
                             <div>
                                 <p class="font-inter font-medium">Seat <span
@@ -518,7 +538,7 @@
 
                         </div>
                         <div class="border-t-2">
-                            <div  class="font-inter font-medium pt-4 flex justify-between">
+                            <div class="font-inter font-medium pt-4 flex justify-between">
                                 <div>
                                     <h4>Total Price</h4>
 
@@ -529,16 +549,42 @@
                                 </div>
 
                             </div>
-                            <div>
-                                <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                            <div class="font-inter flex bg-white rounded-xl m-4">
+                                <input type="text" placeholder="Have any copupon?" class="input w-full" />
+                                <button class="btn m-2 text-white bg-[#1DD100]">Apply</button>
 
                             </div>
-                            <div>
+
+                            <div class="font-inter font-medium pt-4 flex justify-between">
+                                <div>
+                                    <h4>Grand Total</h4>
+
+                                </div>
+                                <div>
+                                    <p>BDT<span>0</span></p>
+
+                                </div>
 
                             </div>
+
+
 
 
                         </div>
+                       
+                    </div>
+                    <div class="my-6 space-y-6">
+                        <h3 class="font-semibold font-inter">Passenger Name*</h3>
+                        <input class="border-2 p-2 min-w-full rounded-lg" type="text" name="" id="" placeholder="Enter your name">
+                        <h3 class="font-semibold font-inter">Phone Number*</h3>
+                        <input class="border-2 p-2 min-w-full rounded-lg" type="text" name="" id="" placeholder="Enter your phone number">
+                        <h3 class="font-semibold font-inter">Email ID</h3>
+                        <input class="border-2 p-2 min-w-full rounded-lg" type="email" name="" id="" placeholder="Enter your email id">
+                        <button onclick="next()" class="btn text-white font-inter text-[20px] font-extrabold min-w-full bg-[#1DD100] p-4">Next</button>
+                    </div>
+                    <div class="flex justify-evenly">
+                        <p class="border-b-2 font-inter">Terms and Conditions</p>
+                        <p class="border-b-2 font-inter">Cancellation Policy</p>
                     </div>
 
                 </div>
@@ -547,7 +593,7 @@
 
     </main>
     <!-- footer section -->
-    <footer class="p-4 lg:p-24 bg-[#030712] text-neutral-content">
+    <footer id="footer" class="p-4 lg:p-24 bg-[#030712] text-neutral-content">
         <div class="flex flex-col">
             <div class="flex justify-between pb-6">
                 <aside>
@@ -592,6 +638,8 @@
         </div>
 
     </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/utility.js"></script>
 
 </body>
 
