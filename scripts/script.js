@@ -45,6 +45,7 @@ applyBtn.addEventListener("click", function () {
             const discountAmount = totalPrice * 0.2;
             const grandTotal = totalPrice - discountAmount;
             discountElement.innerText = grandTotal;
+            document.getElementById('input-field').value = "";
 
         }
 
@@ -66,5 +67,6 @@ nextBtn.addEventListener("click", function () {
     hideElementById();
     showElementById();
 })
+
 
 
